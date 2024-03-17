@@ -21,13 +21,13 @@ class Animal:
         cantPe = Pez.cantidadPeces()
         from zooAnimales.anfibio import Anfibio
         cantAn = Anfibio.cantidadAnfibios()
-        return f"Mamiferos: {cantMa}\nAves: {cantAv}\nReptiles: {cantRe}\nPeces: {cantPe}\nAnfibios: {cantAn}"
+        return f"Mamiferos : {cantMa}\nAves : {cantAv}\nReptiles : {cantRe}\nPeces : {cantPe}\nAnfibios : {cantAn}"
 
     def toString(self):
         return self.__str__()
 
     def __str__(self):
-        string = f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y  mi genero es {self._genero}"
+        string = f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}"
         if self._zona != None:
             string += f", la zona en la que me ubico es {self._zona}, en el {self._zoo}"
         return string
