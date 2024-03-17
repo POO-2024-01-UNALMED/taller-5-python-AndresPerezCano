@@ -1,4 +1,4 @@
-from zooAnimales import Animal
+from zooAnimales.animal import Animal
 
 class Mamifero(Animal):
     caballos = 0
@@ -17,13 +17,15 @@ class Mamifero(Animal):
     
     def crearCaballo( nombre, edad, genero):
         mamifero = Mamifero(nombre, edad, "pradera" , genero, True, 4)
-        _listado.append(mamifero)
-        caballos += 1
+        Mamifero._listado.append(mamifero)
+        Mamifero.caballos += 1
+        return mamifero
 
     def crearLeon( nombre, edad, genero):
         mamifero = Mamifero(nombre, edad, "selva" , genero, True, 4)
-        _listado.append(mamifero)
-        leones += 1
+        Mamifero._listado.append(mamifero)
+        Mamifero.leones += 1
+        return mamifero
     
     @classmethod
     def  getListado(cls):
