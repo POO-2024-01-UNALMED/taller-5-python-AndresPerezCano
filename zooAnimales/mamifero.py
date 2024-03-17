@@ -8,10 +8,10 @@ class Mamifero(Animal):
         super().__init__(nombre, edad, habitat, genero)
         self._pelaje = pelaje
         self._patas = patas
-
-    def cantidadMamiferos():
+    @classmethod
+    def cantidadMamiferos(cls):
         cantidadMamiferos = 0
-        for mamifero in listado:
+        for mamifero in cls._listado:
             cantidadMamiferos += 1
         return cantidadMamiferos
     

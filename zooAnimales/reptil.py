@@ -8,10 +8,11 @@ class Reptil(Animal):
         super().__init__(nombre, edad, habitat, genero)
         self._colorEscamas = colorEscamas
         self._largoCola = largoCola
-
-    def cantidadReptiles():
+    
+    @classmethod
+    def cantidadReptiles(cls):
         cantidadReptiles = 0
-        for reptil in listado:
+        for reptil in cls._listado:
             cantidadReptiles += 1
         return cantidadReptiles
 

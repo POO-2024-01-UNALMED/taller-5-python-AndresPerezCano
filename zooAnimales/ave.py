@@ -7,10 +7,11 @@ class Ave(Animal):
     def __init__(self, nombre, edad, habitat, genero, colorPlumas):
         super().__init__(nombre, edad, habitat, genero)
         self._colorPlumas = colorPlumas
-
-    def cantidadAves():
+    
+    @classmethod
+    def cantidadAves(cls):
         cantidadAves = 0
-        for ave in listado:
+        for ave in cls._listado:
             cantidadAves += 1
         return cantidadAves
     

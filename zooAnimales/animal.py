@@ -11,7 +11,18 @@ class Animal:
         return "dezplazarse"
     
     def totalPorTipo():
-        print("Mamiferos: " + Mamifero.cantidadMamiferos() + "\nAves: " + Ave.cantidadAves() + "\nReptiles: " + Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() + "\nAnfibios: " + Anfibio.cantidadAnfibios()) 
+        from zooAnimales.mamifero import Mamifero
+        cantMa = Mamifero.cantidadMamiferos()
+        from zooAnimales.ave import Ave
+        cantAv = Ave.cantidadAves()
+        from zooAnimales.reptil import Reptil
+        cantRe = Reptil.cantidadReptiles()
+        from zooAnimales.pez import Pez
+        cantPe = Pez.cantidadPeces()
+        from zooAnimales.anfibio import Anfibio
+        cantAn = Anfibio.cantidadAnfibios()
+        return f"Mamiferos: {cantMa}\nAves: {cantAv}\nReptiles: {cantRe}\nPeces: {cantPe}\nAnfibios: {cantAn}"
+        
 
     def __str__():
         string = f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y  mi genero es {self._genero}"

@@ -9,9 +9,10 @@ class Pez(Animal):
         self._colorEscamas = colorEscamas
         self._cantidadAletas = cantidadAletas
 
-    def cantidadPeces():
+    @classmethod
+    def cantidadPeces(cls):
         cantidadPeces = 0
-        for pez in listado:
+        for pez in cls._listado:
             cantidadPeces += 1
         return cantidadPeces
 
