@@ -31,7 +31,7 @@ class Mamifero(Animal):
     @classmethod
     def setListado(cls,listado):
         cls._listado = listado
-    def getPelaje(self):
+    def isPelaje(self):
         return self._pelaje
     def setPelaje(self,pelaje):
         self._pelaje = pelaje
@@ -39,6 +39,22 @@ class Mamifero(Animal):
         return self._patas
     def setPatas(self,patas):
         self._patas = patas
+    def getNombre():
+        return super().getNombre()
+    def setNombre(nombre):
+        super().setNombre(self,nombre)
+    def getEdad():
+        return super().getEdad()
+    def setEdad(edad):
+        super().setEdad(self,edad)
+    def getHabitat():
+        return super().getHabitat()
+    def setHabitat(habitat):
+        super().setHabitat(self,habitat)
+    def getGenero():
+        return super().getGenero()
+    def setGenero(genero):
+        super().setGenero(self,genero)
 
     
 

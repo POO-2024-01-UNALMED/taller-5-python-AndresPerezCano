@@ -42,3 +42,19 @@ class Pez(Animal):
         return self._cantidadAletas
     def setCantidadAletas(self,cantidadAletas):
         self._cantidadAletas = cantidadAletas
+    def getNombre():
+        return super().getNombre()
+    def setNombre(nombre):
+        super().setNombre(self,nombre)
+    def getEdad():
+        return super().getEdad()
+    def setEdad(edad):
+        super().setEdad(self,edad)
+    def getHabitat():
+        return super().getHabitat()
+    def setHabitat(habitat):
+        super().setHabitat(self,habitat)
+    def getGenero():
+        return super().getGenero()
+    def setGenero(genero):
+        super().setGenero(self,genero)

@@ -42,3 +42,19 @@ class Reptil(Animal):
         return self._largoCola
     def setLargoCola(self,largoCola):
         self._largoCola = largoCola
+    def getNombre():
+        return super().getNombre()
+    def setNombre(nombre):
+        super().setNombre(self,nombre)
+    def getEdad():
+        return super().getEdad()
+    def setEdad(edad):
+        super().setEdad(self,edad)
+    def getHabitat():
+        return super().getHabitat()
+    def setHabitat(habitat):
+        super().setHabitat(self,habitat)
+    def getGenero():
+        return super().getGenero()
+    def setGenero(genero):
+        super().setGenero(self,genero)
