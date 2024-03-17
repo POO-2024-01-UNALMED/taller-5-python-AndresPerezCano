@@ -1,0 +1,38 @@
+class Ave(Animal):
+    halcones = 0
+    aguilas = 0
+    _listado = []
+    def __init__(self, nombre, edad, habitat, genero, colorPlumas):
+        super().__init__(nombre, edad, habitat, genero)
+        self._colorPlumas = colorPlumas
+
+    def cantidadAves():
+        cantidadAves = 0
+        for ave in listado:
+            cantidadAves += 1
+        return cantidadAves
+    
+    def movimiento():
+        return "volar"
+    
+    def crearHalcon( nombre, edad, genero):
+        ave = Ave(nombre, edad, "montanas" , genero, "cafe glorioso")
+        _listado.append(ave)
+        halcones += 1
+
+    def crearAguila( nombre, edad, genero):
+        ave = Ave(nombre, edad, "montanas" , genero, "blanco y amarillo")
+        _listado.append(ave)
+        aguilas += 1
+    
+    @classmethod
+    def  getListado(cls):
+        return cls.listado
+    @classmethod
+    def setListado(cls,listado):
+        cls._listado = listado
+    def getColorPlumas(self):
+        return self._colorPlumas
+    def setPelaje(self,colorPlumas):
+        self._colorPlumas = colorPlumas
+    
